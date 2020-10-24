@@ -6,4 +6,8 @@ import lombok.Data;
 public class ResultDto {
     private final String serialNumber;
     private final String value;
+
+    public String getSerialNumber() {
+        return serialNumber.isEmpty() ? null : serialNumber;
+    }
 }

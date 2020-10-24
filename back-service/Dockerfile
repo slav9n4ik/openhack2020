@@ -7,4 +7,4 @@ COPY ./src/main/resources/my-ml.py /tmp/my-ml.py
 
 RUN apt-get update -y && apt-get install python3-pip -y
 
-CMD java -jar /tmp/back-service-0.0.1.jar --spring.config.location=file:///tmp/external-application.properties --spring.profiles.active=test
+CMD java -jar /tmp/back-service-0.0.1.jar --spring.config.location=file:///tmp/external-application.properties
