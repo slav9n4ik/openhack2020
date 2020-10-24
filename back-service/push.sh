@@ -1,0 +1,1 @@
+docker push slav9n4ik/hack-service:latest
