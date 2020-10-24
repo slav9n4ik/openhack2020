@@ -1,7 +1,9 @@
 package com.sass.backservice.execute.executors;
 
+import com.sass.backservice.dto.ResultDto;
+
 import java.nio.file.Path;
 
 public interface MLExecutor {
-    String execute(Path path);
+    ResultDto execute(Path path);
 }

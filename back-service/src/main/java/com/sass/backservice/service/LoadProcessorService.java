@@ -1,8 +1,8 @@
 package com.sass.backservice.service;
 
+import com.sass.backservice.dto.ResultDto;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface LoadProcessorService {
-    String processWithType(MultipartFile file, String type);
-    String processDefaultType(MultipartFile file);
+    ResultDto process(MultipartFile file);
 }

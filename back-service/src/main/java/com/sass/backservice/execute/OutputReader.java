@@ -37,6 +37,6 @@ public class OutputReader {
                 .filter(line -> line.contains(successCode))
                 .collect(Collectors.toList());
         if (result.size() == 0) throw new MLExecutionException("The executions finished with empty results");
-        return result.get(0).split(successCode)[1].trim();
+        return result.get(0);
     }
 }
